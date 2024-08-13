@@ -1,0 +1,45 @@
++++ ARRAY +++
+1. Array is a Collection Similar type Of DataTypes.
+
+//Syntax
+        //Datatype[] variable_name = new datatype[size];
+
+        int[] ros = new int[5];
+        int[] ros = {23, 45, 45, 65, 45};
+
+        int[] ros; //Declaration of an Array, ros is getting defined in a stack ... it happens at compile time.
+        ros = new int[5]; //initialization: actually here object is being created in memory(heap)... it happens at run time
+
+
+        int[] rishabh = new int[54];
+
+        int[] //datatype
+        rishabh //Reference Variable
+        new int[54]; creating object in heap memory
+
+2.
+-Array Objects are in heap
+-Array is may not be internally continuous in java because of jvm (DMA)
+-heap is not continuous
+
+3.
+-new: new keyword is used to create an object in the heap memory
+-Only Primitives are stored in Stack memory and all the other things are stored in heap memory.
+
+-each element in a Array is an object which is stored in heap an some reference variable is pointing to them
+-by default if reference variable has no value it value is NULL.
+
+4. Array List
+- When you dont know the array size (similar to vectors in c++)
+
+import java.util.ArrayList;
+//Syntax;
+ArrayList<Integer> List_Name = new ArrayList<>(10) // here you can give any size i have give 10 for reference
+
+System.out.print(List_Name);
+
+List.Name.add(54);
+
+there are many more functions like add in ArrayList(Part of Collection Framework)
+
+

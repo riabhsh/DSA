@@ -1,0 +1,88 @@
+=in java functions are called Methods.
+functions in a class is methods
+
+we have to put static in access modifier in function, when we have to run functions in static context
+
+static(does not depends on the object)
+
+=function syntax:
+return_type name(argumerts){
+    body..
+    ..
+    ..
+    return statement;
+}
+name();
+
+=Four types of functions:
+1. takes nothing returns nothing.
+2. takes nothing returns something.
+3. takes something returns nothing.
+4. takes something returns something.
+
+theres is only call by value in java
+in terms of an object only copy of reference is pass
+
+therefore you cant change an object you can on just create an copy of an object
+
+..
+=primitvies: just by value
+non-primitve: passing value of the copy of the refernce variable
+
+.......
+
+=
+-call by value
+-copy of the refernce  variable in that case the original value will change(it is also an pass by value)
+
+=scope
+1. function scope
+2. block scope: in block scope there are 2 rules:
+    a) you cant initialize variable inside a block if a variable exist outside of that block(you can only reassign it)
+    b) if you create a variable in a block then its scope is inside a variable
+    anything that is initialize outside the block, cant be initialize inside the block. but can be updated
+    anything that is initialize inside the block, can be intialize outside but cant be used because of the scope
+
+=Shadowing
+Static: object independent
+-two variables with the same name within the scope that overlapse
+-then then most closer when will shodowed the far one(lower level overriding the upper level)
+-shadowing happening when the local variable declares.(scope will begin when the value is itialized)
+-(important) shadowing dosnt takes place in methods only in class variables
+
+=variable length arguments or varx
+- when you create a method that takes a variable number of arguments thats know as varable length method
+- when we dont know how many inputs are given.(0 or more then 0 [0 cant be work in case of Overloading] )
+- internally it takes an array of an integer.
+- implicitly declares array of strings
+- and it should always be written in the last of the parameters
+
+syntax:
+    return_type Function_Name(Data_Type ...Variable_Name){
+    }
+
+    or
+
+    return_type Function_Name(Data_Type a, Data_Type b, Data_Type ...Variable_Name){ //variable_name variable length arguments should be at the emd
+        }
+
+=Function Overloading
+-two or more function can exist if a parameters are different.
+
+-number of arguments should be different
+- or the type of argument should be different if the number of argument is same
+
+Syntax:
+{
+    void fn(int a, int b){
+
+    }
+
+    void fn(int a, int b, String c){
+
+    }
+
+}
+
+varx(empty or 0 cant work it gives an error this is known as ambiguity)
+
