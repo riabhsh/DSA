@@ -1,0 +1,52 @@
+= Binary Search rules
+
+0. array should be sorted
+below is applied in ascending order array...
+1. find the middle element
+2. if target > mid => search in the right.. else vise-versa.
+then for right searching start = mid + 1... then it becomes new start
+and for left searching end = mid - 1... then it becomes new end
+and then we again calculate the mid {(start + end)/2} no decimal value will take only integer
+for eg: 5+6 = 11 then the mid is 11/2 which is 5
+
+- for descending Array => do above think in reverse order..
+
+3. if target == mid element => then mid is the ans.
+
+4. if start > end => element not found.
+
+
+
+mid = (start + end) / 2
+
+= why binary search
+
+-best case: O(1) time will be constant
+
+-worst case: O(logN)
+for level element = number of elements
+for 0th element = (N/2^0)
+for 1th element = (N/2^1)
+for 2nd element = (N/2^2)
+... therefore
+for kth element 1 = (N/2^k) [kth is the last or the level where we get the answer or start > end (not exist)]
+
+so for finding how many total number of levels it takes for the element
+(N/2^k) = 1
+N = 2^K
+for finding the value of k we do log(because k power)
+log(N) = log(2^k)
+so
+logN = Klog2 (power comes to the left thats the property of log)
+K = logN/log2
+hence K = logNbase2... (where N is the size of array)
+
+for example..
+suppose 1million elements whats the worst case scenerio for that...total number of steps
+for linear search it will take 1 million steps
+where Binary search it will take logBase2(1,000,000) which is 20 steps
+
+= Order-Agnostic Binary Search
+it is used when we don't know about whether the array is sorted in ascending or descending order.
+
+so we compare the start element with the end if start is greater then descending otherwise ascending or if equal the array contains same elements
