@@ -1,0 +1,29 @@
+//Bubble Sort(aka. Sinking Sort, Exchange Sort and also Stable Sorting Algo, in place Sorting Algo) Notes
+
+=What are we Doing?
+-with the first pass largest element came to the end.
+-with the second pass second largest element came second from last end.
+- repeats until all element gets sorted.
+
+=Why are we Doing?
+-in every pass(steps/epochs) largest element came to an end.
+that's the idea behind bubble sort...
+-its basically a Comparison Sort Method.
+-every sorting algo is sorts step by step.
+
+=Space and Time Complexity
+-Space Complexity: O(1)
+constant // no extra space required i.e. copying the array is not required.
+aka in place sorting algorithms
+
+-Time Complexities:
+Best Case: O(N) => sorted
+Worst Case: O(N^2) => sorted in descending order.
+(N = number of comparisons.)
+
+-as the size of array is growing,
+the number of comparisons is also growing
+
+=Stable Sorting Algo
+it is also called Stable Sorting Algorithm,
+order should be the same when the value is same.
