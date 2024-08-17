@@ -1,0 +1,24 @@
+//Selection Sort Notes
+
+=What are we Doing?
+-first find find the largest element in array and swap there position with last index
+-then again we find the second largest element and swap with the second last index
+-we repeat until all the elements get sorted
+-find the maximum and swap with the last available index and repeat that's the whole process
+-note: we can do the same thing with the first index instead of the last index.
+
+=Why are we Doing?
+-it Performs well on small lists/arrays.
+
+=Space and Time Complexity
+-Space Complexity: O(1)
+constant // no extra space required i.e. copying the array is not required.
+aka in place sorting algorithms
+
+-Time Complexities:
+Best Case: O(N^2) => sorted
+Worst Case: O(N^2) => sorted in descending order.
+(N = number of comparisons.)
+
+=Stable Sorting Algo?
+it is not a Stable Sorting Algorithm.

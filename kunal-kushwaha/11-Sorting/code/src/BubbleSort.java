@@ -12,7 +12,7 @@ public class BubbleSort {
 
         System.out.println("+ 1. Array is not Sorted+");
         bubble(arr);
-        System.out.println("\n" + Arrays.toString(arr) + "\n");
+        System.out.println(Arrays.toString(arr) + "\n");
 
         System.out.println("+ 2. Array is Sorted+");
         bubble(arr2);
@@ -28,7 +28,7 @@ public class BubbleSort {
 
         System.out.println("+ 5. Array with Mix Numbers+");
         bubble(arr5);
-        System.out.println("\n" + Arrays.toString(arr5) + "\n");
+        System.out.println(Arrays.toString(arr5) + "\n");
     }
 
     static void bubble(int[] arr){

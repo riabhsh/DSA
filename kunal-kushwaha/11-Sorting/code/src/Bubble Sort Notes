@@ -1,4 +1,4 @@
-//Bubble Sort(aka. Sinking Sort, Exchange Sort and also Stable Sorting Algo, in place Sorting Algo) Notes
+//Bubble Sort(aka. Sinking Sort, Exchange Sort and also in-place Sorting Algo) Notes
 
 =What are we Doing?
 -with the first pass largest element came to the end.
@@ -24,6 +24,6 @@ Worst Case: O(N^2) => sorted in descending order.
 -as the size of array is growing,
 the number of comparisons is also growing
 
-=Stable Sorting Algo
-it is also called Stable Sorting Algorithm,
+=Stable Sorting Algo?
+it is a Stable Sorting Algorithm,
 order should be the same when the value is same.
