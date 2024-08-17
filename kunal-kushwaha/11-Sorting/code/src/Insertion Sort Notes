@@ -1,0 +1,29 @@
+//Insertion Sort Notes
+
+=What are we Doing?
+-we are partially sorting the array
+-it goes from small to big
+-first sort index 0 then sort till index no. 1 then sort till index no. 2 so on and so forth.
+- for every index you are at put that index element to the correct index of the left hand side.
+
+=Why are we Doing?
+-it's adaptive
+-steps get reduced if array is sorted like if j is is not smaller then j-1 then break the loop)
+-number of swaps are reduced as compared to bubble sort.
+-it's stable.
+-used for smaller values of n.
+-works good if array was partially sorted.(that's why it takes part in Hybrid Sorting Algorithms)
+
+=Space and Time Complexity
+-Space Complexity: O(1)
+constant // no extra space required i.e. copying the array is not required.
+aka in place sorting algorithms
+
+-Time Complexities:
+Best Case: O(N) => sorted
+Worst Case: O(N^2) => sorted in descending order.
+(N = number of comparisons.)
+
+=Stable Sorting Algo?
+it is a Stable Sorting Algorithm,
+order should be the same when the value is same.
