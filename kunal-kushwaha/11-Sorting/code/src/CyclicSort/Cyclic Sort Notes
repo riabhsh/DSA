@@ -1,0 +1,26 @@
+//Cyclic Sort Notes
+
+=What are we Doing?
+- CHECK, SWAP, MOVE.
+-we use only one loop.
+
+=Why are we Doing?
+-when given numbers in range 1 to N(like continuous range it can be 0 to N-1) use Cyclic Sort
+eg: find missing, find smallest missing, find duplicate etc where numbers from 1 to N.
+
+=Space and Time Complexity
+-Space Complexity: O(1)
+constant // no extra space required i.e. copying the array is not required.
+aka in place sorting algorithms
+
+-Time Complexities:
+Best Case: O(N) => sorted
+Worst Case: O(N^2) => sorted in descending order.
+(N = number of comparisons.)
+
+-as the size of array is growing,
+the number of comparisons is also growing
+
+=Stable Sorting Algo?
+it is a Stable Sorting Algorithm,
+order should be the same when the value is same.
